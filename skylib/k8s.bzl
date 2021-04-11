@@ -94,6 +94,7 @@ def _image_pushes(name_suffix, images, image_registry, image_repository, image_r
                 registry = image_registry,
                 repository = image_repository,
                 repository_prefix = image_repository_prefix,
+                skip_unchanged_digest = True,
             )
     return image_pushes
 
